@@ -1,76 +1,111 @@
-body {
+
+
+body { 
+    
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    margin: 0;
-    padding-top: 40px;
-    max-height: max-content;
+    /* padding-top: 0px; */
+    max-height:max-content;
     max-width:max-content;
     padding-right: 20px;
     padding-left:350px;    
-    background-color: black;
-    color: #ebe7e7; /* Added text color for body */
+    background-color:#000000;
+    color:aliceblue ; /* Added text color for body */
 }
-section{
+.red-border {
+    width: 100%;
+    height: 15px; /* Adjust the thickness of the red border as needed */
+    background-color: red; /* Set the color of the red border */
+    position:fixed; /* Set position to fixed */
+    top: 0; /* Position at the top of the viewport */
+    left:0;
+    right : 0;
+    z-index: 1; /* Ensure it's above other elements */
+}
+.yu,
+.tu{
+    color: red;
+}
+
+
+.container{
+    max-width: 800px;
+    margin: 100px;
     background-color:#1b263b;
-    border-radius: 10px;
+    padding: 2rem;
+    border-radius: 1rem;
+
 }
 
 h1 {
-    text-align: center;
-    color: #fcfbfb;
-    font-size: 28px; /* Increased font size */
+    text-align:left;
+    padding-bottom: 20px;
+    color:white;
     margin-bottom: 20px; /* Added margin at the bottom */
 }
 
 h2 {
-    color: #f3eeee;
-    font-size: 24px; /* Increased font size */
+    color: #fff; /* Increased font size */
     margin-top: 30px;
-    margin-bottom: 15px; /* Added margin at the bottom */
+    margin-bottom: 10px; /* Added margin at the bottom */
 }
 
 h3 {
-    color: #d2d0d0;
-    font-size: 20px; /* Increased font size */
+    color: #fff; /* Increased font size */
     margin-bottom: 10px; /* Added margin at the bottom */
 }
 
 p {
-    color: #f8f7f7;
-    font-size: 16px; /* Increased font size */
+    color: #fff;
+    font-size: 19px; /* Increased font size */
     line-height: 1.8; /* Adjusted line height */
+    margin-bottom: 15px;
+}
+ul {
     margin-bottom: 20px;
 }
-.all_exercises{
-    padding: 18px 34px ;
-    margin-top: 20px;    
-    background: #574775;
+li {
+    margin-bottom: 5px;
 }
-.container{
-    padding: 18px 34px ;
-    margin-top: 30px;
-    background: #574775;
-}
+
+
+
+
 img {
     display: block;
     margin: 0 auto;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 100%;
-    height: auto;
+    max-width:100%;
+    height:auto;
     margin-bottom: 20px;
     transition: transform 0.3s ease; /* Added smooth transition */
     cursor: pointer; /* Added pointer cursor for better usability */
+
+    /* animation  */
+    scale: 0.5; opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: entry;
 }
+
+/* new animation */
+@keyframes fade-in {
+    to{scale: 1; opacity: 1;}
+}
+/* animation end */
 
 img:hover {
     transform: scale(1.05); /* Added hover effect to scale up the image */
 }
 
+
+
 /* Additional styling for links */
 a {
-    color: #007bff; /* Link color */
+    color: #ffd380; /* Link color */
     text-decoration: none; /* Remove underline */
+    
 }
 
 a:hover {
@@ -79,19 +114,18 @@ a:hover {
         
 /* Add custom styling for the table of contents */
 #table-of-contents {
-    position: fixed;
-    width: 15rem;
-    top: 100px; /* Adjust as needed */
+    position:fixed;
+    top: 120px; /* Adjust as needed */
     left: 20px; /* Adjust as needed */
-    background-color: rgb(30, 31, 23);
+    background-color: rgba(255, 255, 255, 0.276);
     border-radius: 10px;
     padding: 25px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-}
+} 
 
 #table-of-contents h2 {
-    color: #2b2727;
+    color:aliceblue;
     font-size: 20px;
     margin-bottom: 10px;
 }
@@ -102,21 +136,26 @@ a:hover {
     margin: 0;
 }
 
+#er{
+    color: red;
+    font-weight: 600;
+    font-size: large;
+}
+
 #table-of-contents li {
     margin-bottom: 10px;
 }
 
 #table-of-contents a {
-    color: #f8f9fb;
+    color:rgb(255, 252, 252);
     text-decoration: none;
     font-size: 16px;
     transition: color 0.3s ease;
 }
 
 #table-of-contents a:hover {
-    text-decoration:underline;
-    color: #0056b3;
-    
+    text-decoration:none;
+    color: red;    
 }
 
 /* site name */
@@ -124,10 +163,10 @@ a:hover {
 
 .site-name {
     
-    position: fixed;
+    position:fixed;
     top: 15px;
     left: 20px;
-    font-size: 35px;
+    font-size: 30px;
     padding: 10px;
     font-weight:lighter;
     z-index: 1000;
@@ -136,43 +175,43 @@ a:hover {
 
 .site-name.sticky {
     top: 10px; /* Adjust as needed */
-}
+} 
 
 .best-chest-exercises{
+    font-family:cursive;
     position:relative;
-    top : 2px;
+    top : 0px;
     text-align: center;
-    font-size: 70px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 100px;
     font-weight:lighter;
-    /* background-color: red; */
-    width: 25rem;
-    border-radius: 15px;
-    left: 24rem;
-    color: red;
+} 
 
+.ak{
+    display: flex;
+    justify-content: space-around;
 }
-
+.lk{
+    width: 40rem;
+}
+.lj{
+    position: relative;
+    left: 1rem;
+    margin-top: 6rem;
+    width: 40%;
+}
 /* buttons */
 /* Button styling */
-.primary-button,
 .secondary-button {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 15px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-
-.primary-button {
-    background-color: #1b263b;
-    color: #fff;
-}
-
 .secondary-button {
-    background-color: #ffc107;
-    color: #333;
+    background-color:red;
+    color: white;
     position: fixed;
     bottom: 5px;
     right: 20px;
@@ -184,3 +223,6 @@ a:hover {
 .tertiary-button:hover {
     background-color: darken(#007bff, 10%);
 }
+
+
+

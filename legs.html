@@ -7,29 +7,28 @@
     <link rel="stylesheet" href="all_exercise.css">
 </head>
 <body >
+    <div class="red-border"></div>
 
-    <div class="site-name">Fitness Sanctuary</div>
+    <div class="site-name"> <span>Fitness</span> <span class = "tu">Sanctuary</span></div> 
 
      <!-- Table of Contents -->
      <div id="table-of-contents"> 
         <ul>
-            <li><a href="#exercise1">Back squat</a></li>
-            <li><a href="#exercise2">Front squat</a></li>
-            <li><a href="#exercise3">Walking lunges</a></li>
-            <li><a href="#exercise4">Lateral lunge</a></li>
-            <li><a href="#exercise5">Reverse lunge</a></li>
-            <!-- Add more exercises as needed -->
+            <li><a href="#exercise1"><span id="er">1.</span>  Back squat</a></li>
+            <li><a href="#exercise2"><span id="er">2.</span>  Front squat</a></li>
+            <li><a href="#exercise3"><span id="er">3.</span>  Walking lunges </a></li>
+            <li><a href="#exercise4"><span id="er">4.</span>  Lateral lunge</a></li>
+            <li><a href="#exercise5"><span id="er">5.</span>  Reverse lunge</a></li>
         </ul>
     </div>
     
 
     
-    <div class="best-chest-exercises">Legs Exercises</div>
+    <div class="best-chest-exercises"><span>Legs</span><span class="yu"> Exercises</span></div>
     
 
     <!-- Exercise Sections -->
-    <section id="exercise1">
-        <div class="all_exercises">
+    <div class="container" id = "exercise1">
             <h2>Back squat</h2>
         <img 
         src = "legs/back squart.jpg"
@@ -45,11 +44,9 @@
         3.Lower until your thighs are parallel to the ground — or as far down as your mobility allows — then push back up to the starting position
     </p>
         </div>
-    </section>
 
-    <section id="exercise2">
-        <div class="all_exercises">
-            <h2>Front squat</h2>
+    <div class="container" id = "exercise2">
+        <h2>Front squat</h2>
         <img 
         src = "legs/Front-Squat-Form-STACK.png"
         alt = "Front squat"
@@ -61,12 +58,10 @@
         2.Sit back into your hips, bend your knees, and lower down toward the floor. Ensure that your knees track out and your chest stays proud, resisting the pull to fall forward</br>
         3.Lower until your thighs are parallel to the ground — or as far down as your mobility allows — then push back up to the starting position.
     </p>   
-        </div> 
-    </section>
+    </div> 
 
-    <section id="exercise3">
-        <div class="all_exercises">
-            <h2>Walking lunges-</h2>
+    <div class="container" id = "exercise1">
+        <h2>Walking lunges-</h2>
         <img 
         src = "legs/walking lunges.gif"
         alt = "walking lunges"
@@ -80,12 +75,10 @@
         3.	Push up through your right heel, coming back up to the starting position. <br>
         4.	Continue forward with the left leg.
 
-        </div>
-    </section>
+    </div>
 
-    <section id="exercise4">
-        <div class="all_exercises">
-            <h2> Lateral lunge </h2>
+    <div class="container" id = "exercise1">
+        <h2> Lateral lunge </h2>
         <img 
         src = "legs/late.gif"
         alt = "lateral lunges"
@@ -100,11 +93,9 @@
 
     </p>    
         </div>
-    </section>
 
-    <section id="exercise5">
-        <div class="all_exercises">
-            <h2>Reverse lunge</h2>
+    <div class="container" id = "exercise1">
+        <h2>Reverse lunge</h2>
         <img 
         src = "legs/reverse lunges.gif"
         alt = "Reverse lunges"
@@ -116,15 +107,14 @@
         2.	Step backward with your right foot, lunging until your left leg forms a 90-degree angle. Keep your torso upright. <br>
         3.	Push back up through your left heel to the starting position.
         </p> 
-        </div>  
-    </section>
+    </div> 
 
    
 
 
     <!-- buttons -->    
-    <button id="learn-more-btn" class="secondary-button">Learn More</button>
-    
+    <a href="gym.html"><button id="learn-more-btn" class="secondary-button">Back</button>
+    </a>    
     <!-- JavaScript for smooth scrolling -->
     <script>
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -152,11 +142,10 @@
         var learnMoreBtn = document.getElementById('learn-more-btn');
         // Add click event listener to the button
         learnMoreBtn.addEventListener('click', function() {
-            alert("learn More button is clicked");
-        });
+            ;
+        });   
 
     </script>
-    
 </body>
 
 </html>

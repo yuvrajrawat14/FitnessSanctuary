@@ -6,10 +6,6 @@ body {
     color: #eeecec
     
 }
-.exerciseName{
-    text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
 
 header {
     /* background-color:#070707; */
@@ -124,7 +120,7 @@ section{
    .fitness-types{
     display: flex;
     margin: 2vw;
-    justify-content:space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
     align-content: space-between;
    }
@@ -137,6 +133,21 @@ section{
     padding: 7px 7px;
     font-size: 5rem;
     margin-left: 30vw;
+   }
+   .fg{
+    /* width: 38rem; */
+    /* height: 2rem; */
+    border-radius: 7px;
+    font-family:cursive;
+    font-weight: 100px;
+    font-size: 5rem;
+    /* margin-left: 30vw; */
+   }
+   #services i{
+    margin-left:36vw ;
+   }
+   #lj{
+    color: red;
    }
    .jklo{
     margin-left: 35vw;
@@ -164,7 +175,7 @@ section{
 
    .types-cards{
     width: 20vw;
-    background-color: hsla(79,6%,64%,.07);
+    background-color: #1b263b;
     color: #eeecec;
     height:62vh;
     margin-top: 5rem;
@@ -172,14 +183,18 @@ section{
     padding-right: 1rem;
     border-radius: 1rem;
    }
+   #gh{
+    padding-left: 6rem;
+   }
    .types-cards:hover{
     border: 1px solid rgb(214, 212, 212);
     transform: scale(1.05);
    }
    .types-cards-title{
-    font-size: 35px;
+    font-size:1.6vw;
     font-weight: 700;
-    text-align: center;
+    padding-left: 5rem;
+    width: 9vw;
     border-radius: 10px;
     color: red;
    }
@@ -194,17 +209,17 @@ section{
     width: 19vw;
    }
    .secondary-button {
-    background-color:white;
-    color: red;
+    background-color: red;
+    color: white;
     outline: none;
     border: none;
     position: relative;
     top: 10px;
     left: 6rem;
     font-size: medium;
-    font-weight:600;
+    /* font-weight:600; */
     border-radius: 5px;
-    padding:5px 4px;
+    padding:7px 6px;
 }
 .secondary-button:hover{
     cursor: pointer;
