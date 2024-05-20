@@ -3,7 +3,7 @@ The Fitness Sanctuary website endeavors to create an accessible online platform 
 
 ## Collaborators
 
-- **Yuvraj[https://github.com/yuvrajrawat14]** - Built the gym section exercises pages
 - **Keshav[https://github.com/keshav767]** - Built the main page of the website
+- **Yuvraj[https://github.com/yuvrajrawat14]** - Built the gym section exercises pages
 - **Jay[]** - Built the yoga section pages
 
