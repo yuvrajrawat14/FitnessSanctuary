@@ -6,6 +6,10 @@ body {
     color: #eeecec
     
 }
+.exerciseName{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
 header {
     /* background-color:#070707; */
@@ -120,7 +124,7 @@ section{
    .fitness-types{
     display: flex;
     margin: 2vw;
-    justify-content: space-between;
+    justify-content:space-evenly;
     flex-wrap: wrap;
     align-content: space-between;
    }

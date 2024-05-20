@@ -43,7 +43,13 @@ p {
 }
 .all_exercises{
     padding: 18px 34px ;
-    margin-top: 12px;
+    margin-top: 20px;    
+    background: #574775;
+}
+.container{
+    padding: 18px 34px ;
+    margin-top: 30px;
+    background: #574775;
 }
 img {
     display: block;
@@ -77,7 +83,7 @@ a:hover {
     width: 15rem;
     top: 100px; /* Adjust as needed */
     left: 20px; /* Adjust as needed */
-    background-color: red;
+    background-color: rgb(30, 31, 23);
     border-radius: 10px;
     padding: 25px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -136,13 +142,14 @@ a:hover {
     position:relative;
     top : 2px;
     text-align: center;
-    font-size: 35px;
+    font-size: 70px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight:lighter;
-    background-color: red;
+    /* background-color: red; */
     width: 25rem;
     border-radius: 15px;
     left: 24rem;
-    color: #0a0a0a;
+    color: red;
 
 }
 
